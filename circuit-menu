@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>menu</title>
+        <link rel="stylesheet" href="circuit-menu.css">
+    </head>
+    <body>  
+        <div id="border"></div>
+        <button id="file">ファイル</button>
+        <button id="make" class="makes">+<br>新しく作成</button>
+        <div id="modal">
+            <button id="exit">exit</button>
+        </div>
+        <script type="module" src="circuit-menu.js"></script>
+    </body>
+</html>
