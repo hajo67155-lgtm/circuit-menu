@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+#border {
+    position: absolute;
+    border: 1px solid black;
+}
+#file {
+    position: absolute;
+    border: 1px solid black;
+}
+.makes {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+#modal button {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
