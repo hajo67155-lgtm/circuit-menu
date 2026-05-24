@@ -2,16 +2,16 @@ body {
     margin: 0;
     overflow: hidden;
 }
-#border {
+* {
     position: absolute;
+}
+#border {
     border: 1px solid black;
 }
 #file {
-    position: absolute;
     border: 1px solid black;
 }
 .makes {
-    position: absolute;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -21,8 +21,45 @@ body {
     background: rgba(0,0,0,0.5);
     display: none;
 }
-#modal button {
-    width: 20px;
-    height: 20px;
+#model * {
+    font-size: 20px;
+}
+#model-background {
+    background-color: white;
+    border: 1px solid black;
+    border-radius:  3px;
+}
+#opus_name-textarea {
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    resize: none;
+}
+#create {
+    border: 1px solid black;
     border-radius: 5px;
+}
+#detail {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#detail-d {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    display: none;
+}
+#detail-exit {
+    border: 1px solid black;
+    border-radius: 3px;
+    display: none;
+}
+#exit {
+    border-radius: 2px;
+    z-index: 5;
 }
