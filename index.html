@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>circuit-menu</title>
+        <title>menu</title>
         <link rel="stylesheet" href="circuit-menu.css">
     </head>
     <body>  
@@ -10,6 +10,35 @@
         <button id="file">ファイル</button>
         <button id="make" class="makes">+<br>新しく作成</button>
         <div id="modal">
+            <div id="model-background"></div>
+            <text id="opus_name-text">作品名を記入してください</text>
+            <input type="text" id="opus_name-input"></textarea>
+            <text id="type_select-text">種類を選択してください</text>
+            <select id="type_select-select">
+                <option id="select_opsiton_one">2D-CAD</option>
+                <option id="select_option_two">3D-CAD</option>
+                <option id="select_option_three">二次元物理演算</option>
+                <option id="select_option_four">3次元物理演算</option>
+                <option id="select_option_fove">二次元回路シミュレーション</option>
+                <option id="select_option_six">三次元回路シミュレーション</option>
+            </select>
+            <button id="create">作成</button>
+            <button id="detail">種類についての詳細</button>
+            <div id="detail-d">
+                2D-CAD<br>
+                「2D-CAD」は二次元のものを作成します。物理演算は行わず、物体の作成を目的とします。<br>
+                3D-CAD<br>
+                「3D-CAD」は三次元の物体を作成できます。こちらも物理演算は行わず、三次元物体の作成を目的とします。<br>
+                二次元物理演算<br>
+                「二次元物理演算」は二次元の物体のものを物理演算シミュレーションします。また2D-CADとは違い、物体の作成は行わないため、2D-CADで作成したものを使用して物理シミュレーションを行います。<br>
+                三次元物理演算<br>
+                「三次元物理演算」は三次元の物体をシミュレーションします。これも二次元物理演算と同じく、3D-CADで作成したものを使用してシミュレーションします。<br>
+                二次元回路シミュレーション<br>
+                「二次元回路シミュレーション」は平面での回路を作成してシミュレーションします。<br>
+                三次元回路シミュレーション<br>
+                「三次元回路シミュレーション」は三次元における回路をシミュレーションします。また、電子部品は3D-CADから作成し導入することで自由度の高いものとなっています。
+            </div>
+            <button id="detail-exit">exit</button>
             <button id="exit">exit</button>
         </div>
         <script type="module" src="circuit-menu.js"></script>
